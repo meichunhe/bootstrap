@@ -1,0 +1,548 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "quasar LoanPrograms",
+    "description": "TODO: Add Description",
+    "license": {
+      "name": "MIT",
+      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/loanprograms": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetLoadProgramsByTenantIdAndClientId",
+        "tags": [
+          "LoanPrograms"
+        ],
+        "operationId": "GetLoadProgramsByTenantIdAndClientId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "clientId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "tenantId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/loanprograms",
+              "headers": {
+                "clientId": "10",
+                "tenantId": "10"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "GetLoadProgramsByTenantIdAndClientId",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "PostLoadProgramsByTenantIdAndClientId",
+        "tags": [
+          "LoanPrograms"
+        ],
+        "operationId": "PostLoadProgramsByTenantIdAndClientId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/PostLoadProgramsByTenantIdAndClientIdRequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "clientId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "tenantId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/loanprograms",
+              "headers": {
+                "Content-Type": "application/json",
+                "clientId": "10",
+                "tenantId": "10"
+              },
+              "body": "{\n  \"programId\": \"1\",\n  \"programName\": \"Loan Program 1\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "PostLoadProgramsByTenantIdAndClientId",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loanprograms/1": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "GetLoadProgramsByTenantIdAndClientIdAndProgramId",
+        "tags": [
+          "LoanPrograms"
+        ],
+        "operationId": "GetLoadProgramsByTenantIdAndClientIdAndProgramId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "clientId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "tenantId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/loanprograms/1",
+              "headers": {
+                "clientId": "10",
+                "tenantId": "10"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "GetLoadProgramsByTenantIdAndClientIdAndProgramId",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "PutLoadProgramsByTenantIdAndClientId",
+        "tags": [
+          "LoanPrograms"
+        ],
+        "operationId": "PutLoadProgramsByTenantIdAndClientId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/PutLoadProgramsByTenantIdAndClientIdRequest"
+            }
+          },
+          {
+            "name": "clientId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "tenantId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/loanprograms/1",
+              "headers": {
+                "Content-Type": "application/json",
+                "clientId": "10",
+                "tenantId": "10"
+              },
+              "body": "{\n  \"programId\": \"2\",\n  \"programName\": \"Loan Program 2\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "PutLoadProgramsByTenantIdAndClientId",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "TODO: Add Description",
+        "summary": "DeleteLoadProgramsByTenantIdAndClientId",
+        "tags": [
+          "LoanPrograms"
+        ],
+        "operationId": "DeleteLoadProgramsByTenantIdAndClientId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/DeleteLoadProgramsByTenantIdAndClientIdRequest"
+            }
+          },
+          {
+            "name": "clientId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "tenantId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "DELETE",
+              "uri": "/loanprograms/1",
+              "headers": {
+                "Content-Type": "application/json",
+                "clientId": "10",
+                "tenantId": "10"
+              },
+              "body": "{\n  \"programId\": \"2\",\n  \"programName\": \"Loan Program 2\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "DeleteLoadProgramsByTenantIdAndClientId",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "patch": {
+        "description": "TODO: Add Description",
+        "summary": "PatchLoadProgramsByTenantIdAndClientId",
+        "tags": [
+          "LoanPrograms"
+        ],
+        "operationId": "PatchLoadProgramsByTenantIdAndClientId",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/PatchLoadProgramsByTenantIdAndClientIdRequest"
+            }
+          },
+          {
+            "name": "clientId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "tenantId",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PATCH",
+              "uri": "/loanprograms/1",
+              "headers": {
+                "Content-Type": "application/json",
+                "clientId": "10",
+                "tenantId": "10"
+              },
+              "body": "{\n  \"programName\": \"Loan Program 2\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "PatchLoadProgramsByTenantIdAndClientId",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "definitions": {
+    "PostLoadProgramsByTenantIdAndClientIdRequest": {
+      "title": "PostLoadProgramsByTenantIdAndClientIdRequest",
+      "type": "object",
+      "properties": {
+        "programId": {
+          "description": "",
+          "type": "string"
+        },
+        "programName": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "programId",
+        "programName"
+      ]
+    },
+    "PutLoadProgramsByTenantIdAndClientIdRequest": {
+      "title": "PutLoadProgramsByTenantIdAndClientIdRequest",
+      "type": "object",
+      "properties": {
+        "programId": {
+          "description": "",
+          "type": "string"
+        },
+        "programName": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "programId",
+        "programName"
+      ]
+    },
+    "DeleteLoadProgramsByTenantIdAndClientIdRequest": {
+      "title": "DeleteLoadProgramsByTenantIdAndClientIdRequest",
+      "type": "object",
+      "properties": {
+        "programId": {
+          "description": "",
+          "type": "string"
+        },
+        "programName": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "programId",
+        "programName"
+      ]
+    },
+    "PatchLoadProgramsByTenantIdAndClientIdRequest": {
+      "title": "PatchLoadProgramsByTenantIdAndClientIdRequest",
+      "type": "object",
+      "properties": {
+        "programName": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "programName"
+      ]
+    }
+  }
+}
