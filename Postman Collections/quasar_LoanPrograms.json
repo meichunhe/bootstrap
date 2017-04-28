@@ -143,7 +143,7 @@
                 "clientId": "10",
                 "tenantId": "10"
               },
-              "body": "{\n  \"programId\": \"1\",\n  \"programName\": \"Loan Program 1\"\n}"
+              "body": "{\n  \"programId\": \"4\",\n  \"programName\": \"Loan Program 4\"\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -167,7 +167,7 @@
         }
       }
     },
-    "/loanprograms/1": {
+    "/loanprograms/2": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "GetLoadProgramsByTenantIdAndClientIdAndProgramId",
@@ -204,7 +204,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/loanprograms/1",
+              "uri": "/loanprograms/2",
               "headers": {
                 "clientId": "10",
                 "tenantId": "10"
@@ -230,7 +230,9 @@
           "AllowDynamicFormParameters": false,
           "IsMultiContentStreaming": false
         }
-      },
+      }
+    },
+    "/loanprograms/1": {
       "put": {
         "description": "TODO: Add Description",
         "summary": "PutLoadProgramsByTenantIdAndClientId",
