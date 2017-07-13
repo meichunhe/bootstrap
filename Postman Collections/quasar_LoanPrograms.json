@@ -481,6 +481,10 @@
   "definitions": {
     "PostLoadProgramsByTenantIdAndClientIdRequest": {
       "title": "PostLoadProgramsByTenantIdAndClientIdRequest",
+      "example": {
+        "programId": "4",
+        "programName": "Loan Program 4"
+      },
       "type": "object",
       "properties": {
         "programId": {
@@ -499,6 +503,10 @@
     },
     "PutLoadProgramsByTenantIdAndClientIdRequest": {
       "title": "PutLoadProgramsByTenantIdAndClientIdRequest",
+      "example": {
+        "programId": "2",
+        "programName": "Loan Program 2"
+      },
       "type": "object",
       "properties": {
         "programId": {
@@ -517,6 +525,10 @@
     },
     "DeleteLoadProgramsByTenantIdAndClientIdRequest": {
       "title": "DeleteLoadProgramsByTenantIdAndClientIdRequest",
+      "example": {
+        "programId": "2",
+        "programName": "Loan Program 2"
+      },
       "type": "object",
       "properties": {
         "programId": {
@@ -535,6 +547,9 @@
     },
     "PatchLoadProgramsByTenantIdAndClientIdRequest": {
       "title": "PatchLoadProgramsByTenantIdAndClientIdRequest",
+      "example": {
+        "programName": "Loan Program 2"
+      },
       "type": "object",
       "properties": {
         "programName": {
