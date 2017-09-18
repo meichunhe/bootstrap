@@ -1,0 +1,241 @@
+FORMAT: 1A
+HOST: http://quasarloanprograms.us-west-2.elasticbeanstalk.com
+
+# quasar LoanPrograms
+TODO: Add Description
+
+# Group LoanPrograms v1
+
+## V1 Loanprograms [/v1/loanprograms]
+
+### GetLoadProgramsByTenantIdAndClientId [GET]
+TODO: Add Description
+
++ Request 
+    + Headers
+
+            clientId:10
+            tenantId:10
+
+
+
+
++ Response 200 
+
+
+
+### GetLoadProgramsByTenantIdAndClientIdAndProgramId [GET]
+TODO: Add Description
+
++ Request 
+    + Headers
+
+            clientId:10
+            tenantId:10
+
+
+
+
++ Response 200 
+
+
+
+### PostLoadProgramsByTenantIdAndClientId [POST]
+TODO: Add Description
+
++ Request (application/json)
+    + Headers
+
+            clientId:10
+            tenantId:10
+
+    + Attributes (PostLoadProgramsByTenantIdAndClientIdRequest)
+
+    + Body
+
+            {
+                "programId": 6,
+                "programName": "Rustic Granite Pizza 6",
+                "isActive": 1
+            }
+
+
++ Response 200 
+
+
+
+
+## V1 Loanprograms 6 [/v1/loanprograms/6]
+
+### PutLoadProgramsByTenantIdAndClientId [PUT]
+TODO: Add Description
+
++ Request (application/json)
+    + Headers
+
+            clientId:10
+            tenantId:10
+
+    + Attributes (PutLoadProgramsByTenantIdAndClientIdRequest)
+
+    + Body
+
+            {
+                "programId": 6,
+                "programName": "Rustic Granite Pizza 6.1",
+                "isActive": 1
+            }
+
+
++ Response 200 
+
+
+
+### DeleteLoadProgramsByTenantIdAndClientId [DELETE]
+TODO: Add Description
+
++ Request (application/json)
+    + Headers
+
+            clientId:10
+            tenantId:10
+
+    + Attributes (DeleteLoadProgramsByTenantIdAndClientIdRequest)
+
+    + Body
+
+            {
+                "programId": "2",
+                "programName": "Loan Program 2"
+            }
+
+
++ Response 200 
+
+
+
+
+## V1 Loanprograms 2 [/v1/loanprograms/2]
+
+### PatchLoadProgramsByTenantIdAndClientId [PATCH]
+TODO: Add Description
+
++ Request (application/json)
+    + Headers
+
+            clientId:10
+            tenantId:10
+
+    + Attributes (PatchLoadProgramsByTenantIdAndClientIdRequest)
+
+    + Body
+
+            {
+                "programName": "Loan Program 2.1"
+            }
+
+
++ Response 200 
+
+
+
+
+
+# Group Loan Programs Template v1
+
+## V1 Loanprogramtemplates [/v1/loanprogramtemplates]
+
+### Get All Loan Program Templates [GET]
+TODO: Add Description
+
++ Response 200 
+
+
+
+
+## V1 Loanprogramtemplates BasePersonal Variable1 [/v1/loanprogramtemplates/BasePersonal Variable1]
+
+### Get All Loan Program Templates by Template Name [GET]
+TODO: Add Description
+
++ Response 200 
+
+
+
+
+
+# Group Loan Program v2
+
+## V2 Loanprograms [/v2/loanprograms]
+
+### Get Client Specific Templates [GET]
+TODO: Add Description
+
++ Request 
+    + Headers
+
+            tenantid:1
+            clientid:2
+
+
+
+
++ Response 200 
+
+
+
+
+## V2 Loanprograms BasePersonalFixed [/v2/loanprograms/BasePersonalFixed]
+
+### Get Client Specific Templates by Template Name [GET]
+TODO: Add Description
+
++ Request 
+    + Headers
+
+            tenantid:1
+            clientid:2
+
+
+
+
++ Response 200 
+
+
+
+
+
+# Data Structures
+
+## PostLoadProgramsByTenantIdAndClientIdRequest (object)
+
+
+### Properties
++ `programId` (number, required) 
++ `programName` (string, required) 
++ `isActive` (number, required) 
+
+
+## PutLoadProgramsByTenantIdAndClientIdRequest (object)
+
+
+### Properties
++ `programId` (number, required) 
++ `programName` (string, required) 
++ `isActive` (number, required) 
+
+
+## DeleteLoadProgramsByTenantIdAndClientIdRequest (object)
+
+
+### Properties
++ `programId` (string, required) 
++ `programName` (string, required) 
+
+
+## PatchLoadProgramsByTenantIdAndClientIdRequest (object)
+
+
+### Properties
++ `programName` (string, required) 
+
