@@ -1,0 +1,485 @@
+{
+  "swaggerVersion": "1.2",
+  "basePath": "http://quasarloanprograms.us-west-2.elasticbeanstalk.com",
+  "resourcePath": "/",
+  "apis": [
+    {
+      "path": "/v1/loanprograms",
+      "operations": [
+        {
+          "method": "GET",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "GetLoadProgramsByTenantIdAndClientId",
+          "parameters": [
+            {
+              "name": "clientId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "tenantId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        },
+        {
+          "method": "GET",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "GetLoadProgramsByTenantIdAndClientIdAndProgramId",
+          "parameters": [
+            {
+              "name": "clientId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "tenantId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        },
+        {
+          "method": "POST",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "PostLoadProgramsByTenantIdAndClientId",
+          "parameters": [
+            {
+              "name": "Body",
+              "description": "",
+              "paramType": "body",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "$ref": "PostLoadProgramsByTenantIdAndClientIdRequest"
+            },
+            {
+              "name": "Content-Type",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "clientId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "tenantId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        }
+      ]
+    },
+    {
+      "path": "/v1/loanprograms/6",
+      "operations": [
+        {
+          "method": "PUT",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "PutLoadProgramsByTenantIdAndClientId",
+          "parameters": [
+            {
+              "name": "Body",
+              "description": "",
+              "paramType": "body",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "$ref": "PutLoadProgramsByTenantIdAndClientIdRequest"
+            },
+            {
+              "name": "clientId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "tenantId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "Content-Type",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        },
+        {
+          "method": "DELETE",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "DeleteLoadProgramsByTenantIdAndClientId",
+          "parameters": [
+            {
+              "name": "Body",
+              "description": "",
+              "paramType": "body",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "$ref": "DeleteLoadProgramsByTenantIdAndClientIdRequest"
+            },
+            {
+              "name": "clientId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "tenantId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "Content-Type",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        }
+      ]
+    },
+    {
+      "path": "/v1/loanprograms/2",
+      "operations": [
+        {
+          "method": "PATCH",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "PatchLoadProgramsByTenantIdAndClientId",
+          "parameters": [
+            {
+              "name": "Body",
+              "description": "",
+              "paramType": "body",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "$ref": "PatchLoadProgramsByTenantIdAndClientIdRequest"
+            },
+            {
+              "name": "clientId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "tenantId",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "Content-Type",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        }
+      ]
+    },
+    {
+      "path": "/v1/loanprogramtemplates",
+      "operations": [
+        {
+          "method": "GET",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "Get All Loan Program Templates",
+          "parameters": [],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        }
+      ]
+    },
+    {
+      "path": "/v1/loanprogramtemplates/BasePersonal Variable1",
+      "operations": [
+        {
+          "method": "GET",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "Get All Loan Program Templates by Template Name",
+          "parameters": [],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        }
+      ]
+    },
+    {
+      "path": "/v2/loanprograms",
+      "operations": [
+        {
+          "method": "GET",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "Get Client Specific Templates",
+          "parameters": [
+            {
+              "name": "tenantid",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "clientid",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        }
+      ]
+    },
+    {
+      "path": "/v2/loanprograms/BasePersonalFixed",
+      "operations": [
+        {
+          "method": "GET",
+          "summary": "TODO: Add Description",
+          "deprecated": false,
+          "nickname": "Get Client Specific Templates by Template Name",
+          "parameters": [
+            {
+              "name": "tenantid",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            },
+            {
+              "name": "clientid",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "type": "string"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": []
+        }
+      ]
+    }
+  ],
+  "models": {
+    "PostLoadProgramsByTenantIdAndClientIdRequest": {
+      "id": "PostLoadProgramsByTenantIdAndClientIdRequest",
+      "required": [
+        "programId",
+        "programName",
+        "isActive"
+      ],
+      "properties": {
+        "programId": {
+          "description": "",
+          "defaultValue": "",
+          "type": "integer",
+          "format": "int32"
+        },
+        "programName": {
+          "description": "",
+          "defaultValue": "",
+          "type": "string"
+        },
+        "isActive": {
+          "description": "",
+          "defaultValue": "",
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "subTypes": []
+    },
+    "PutLoadProgramsByTenantIdAndClientIdRequest": {
+      "id": "PutLoadProgramsByTenantIdAndClientIdRequest",
+      "required": [
+        "programId",
+        "programName",
+        "isActive"
+      ],
+      "properties": {
+        "programId": {
+          "description": "",
+          "defaultValue": "",
+          "type": "integer",
+          "format": "int32"
+        },
+        "programName": {
+          "description": "",
+          "defaultValue": "",
+          "type": "string"
+        },
+        "isActive": {
+          "description": "",
+          "defaultValue": "",
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "subTypes": []
+    },
+    "DeleteLoadProgramsByTenantIdAndClientIdRequest": {
+      "id": "DeleteLoadProgramsByTenantIdAndClientIdRequest",
+      "required": [
+        "programId",
+        "programName"
+      ],
+      "properties": {
+        "programId": {
+          "description": "",
+          "defaultValue": "",
+          "type": "string"
+        },
+        "programName": {
+          "description": "",
+          "defaultValue": "",
+          "type": "string"
+        }
+      },
+      "subTypes": []
+    },
+    "PatchLoadProgramsByTenantIdAndClientIdRequest": {
+      "id": "PatchLoadProgramsByTenantIdAndClientIdRequest",
+      "required": [
+        "programName"
+      ],
+      "properties": {
+        "programName": {
+          "description": "",
+          "defaultValue": "",
+          "type": "string"
+        }
+      },
+      "subTypes": []
+    }
+  },
+  "authorizations": {},
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ]
+}
